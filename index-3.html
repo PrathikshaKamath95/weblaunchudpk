@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title> Website lunch</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Off Canvas Menu -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Color Switcher -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  </head>
+  <body>
+
+    <div class="bg-wraper overlay has-vignette">
+      <div id="example" class="slider opacity-50 vegas-container" style="height: 983px;"></div>
+    </div>
+
+    <!-- Coundown Section Start -->
+    <section class="countdown-timer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12 text-center">
+            <h1 class="ml3">WELCOME TO WEBSITE LAUNCHING OF </h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <h1 class="ml9">
+<span class="text-wrapper">
+ <span class="letters"> UPPINAKUDRU PUPPET ACADEMY & SHRI GANESHA YAKSHAGANA GOMBEYATA MANDALI </span>
+
+</span>
+</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <div class="heading-count">
+
+              <p class="text-light">Our exciting new website will launch today </p>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="row time-countdown line-right justify-content-center">
+              <div id="clock" class="time-count"></div>
+            </div>
+            <div class="subscribe-form text-center">
+              <h4>KEEP SUPPORTING US</h4>
+              <div class="button-group">
+            <!--    <a href="https://yakshagana.vercel.app" class="btn btn-common">LAUNCHING BUTTON</a>-->
+              <a href=" http://www.yakshaganapuppets.org/" class="btn btn-common">LAUNCHING BUTTON</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Coundown Section End -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vegas.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+
+    <script type="text/javascript">
+      $("#example").vegas({
+          timer: false,
+          delay: 6000,
+          transitionDuration: 2000,
+          transition: "blur",
+          slides: [
+            { src: "assets/img/slide1.jpg" },
+
+            { src: "assets/img/slide3.jpg" },
+            { src: "assets/img/slide2.jpg" }
+
+          ]
+      });
+    </script>
+    <script>
+    var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 2250,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });</script>
+  <script>
+  var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 110 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });</script>
+
+  </body>
+</html>
